@@ -32,7 +32,7 @@ const Contacts = () => {
         <div className="bottom-container">
           <div className="mapouter">
             <div className="gmap_canvas">
-              <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=13755,%20Fiji%20Way%20Marina%20del%20Ray,%20CA%2090292%20United%20States&t=&z=13&ie=UTF8&iwloc=&output=embed" scrolling="no" ></iframe>
+              <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=13755%20Fiji%20Way%20Marina%20del%20Ray,%20CA%2090292%20United%20States&t=&z=15&ie=UTF8&iwloc=&output=embed" scrolling="no" ></iframe>
               <a href="https://123movies-a.com"></a>
               <br />
               <a href="https://www.embedgooglemap.net">custom google maps for website</a>
