@@ -1,0 +1,142 @@
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 350px;
+  width: 600px;
+  margin: 0 0 3px 3px;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none!important;
+  height: 350px;
+  width: 600px;
+}
+
+.contacts-container {
+  background-color: #35A5DB;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 60vw;
+  height: auto;
+}
+
+.top-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.bottom-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.item__elements {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  .text__elements {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+  }
+}
+
+.contacts__img {
+  width: 80px;
+  height: auto;
+}
+
+.adress-container {
+  img {
+    width: 120px;
+    height: auto;
+  }
+  .text__elements {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.text__elements {
+  color: white;
+  p {
+    font-family: 'Poppins-Regular';
+    font-size: 15px;
+  }
+  span {
+    font-family: 'Poppins-SemiBold';
+    font-size: 14px;
+    a {
+      font-family: 'Poppins-SemiBold';
+      font-size: 14px;
+    }
+  }
+}
+
+@include xl {
+  .top-container {
+    flex-direction: column;
+    align-items: inherit;
+  }
+  .bottom-container {
+    flex-direction: column-reverse;
+    align-items: inherit;
+  }
+  .adress-container {
+    display: flex;
+    align-items: center;
+    .text__elements {
+      text-align: left;
+    }
+  }
+  .adress-container img {
+    width: 80px;
+    height: auto;
+  }
+  .gmap_canvas {
+    width: 558px;
+  }
+  .mapouter {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 3px;
+    width: 529px;
+  }
+}
+
+@include lg {
+  .gmap_canvas {
+    width: 558px;
+  }
+  .mapouter {
+    width: 482px;
+  }
+}
+
+@include md {
+  .mapouter {
+    width: 380px;
+  }
+}
+
+@include sm {
+  .mapouter {
+    width: 232px;
+  }
+}
+
+@include xs {
+  .mapouter {
+    width: 232px;
+  }
+}

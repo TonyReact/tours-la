@@ -1,0 +1,46 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  width: 100%;
+  margin-top: auto;
+}
+
+.footer-container {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+  margin-top: 20px;
+  a, a:visited, .contact__number {
+    color: #000;
+    font-size: 15px;
+  }
+  .contact__number{
+    border: 2px solid #000;
+    box-shadow: none;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  span {
+    font-size: 15px;
+    font-family: 'Poppins-Regular';
+  }
+}
+
+.footer-head {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  gap: 15px;
+  span {
+    font-family: 'Poppins-SemiBold';
+  }
+}

@@ -1,0 +1,50 @@
+.container-activities {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+
+.activity__box {
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  margin: 10px auto;
+  gap: 40px;
+  height: 750px;
+  border-radius: 10px;
+}
+
+@include xxl {
+  .activity__box {
+    width: 340px;
+    height: 450px;
+  }
+}
+
+@include lg {
+  .element-container {
+    .text-activities {
+      .advantage__descritpion {
+        line-height: 23px;
+      }
+      .start__btn {
+        margin: 9px 0px -18px 0;
+      }
+      &#text-activities__first, &#text-activities__second {
+        gap: 2px;
+      }
+    }
+  }
+}
+
+@include sm {
+  .activity__box {
+    width: 220px;
+    height: 350px;
+  }
+}
