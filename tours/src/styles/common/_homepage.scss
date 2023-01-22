@@ -269,72 +269,6 @@
   display: none;
 }
 
-// ============================ MEDIA ========================
-
-@include lg {
-  .header-nav {
-    display: none;
-  }
-  .burger-menu {
-    display: flex;
-    .burger {
-      cursor: pointer;
-      margin-right: 27px;
-    }
-    .nav-bar {
-      position: absolute;
-      display: flex;
-      flex-direction: column;
-      margin: 0 auto;
-      width: 250px;
-      height: 330px;
-      gap: 20px;
-      top: 15vh;
-      right: 0;
-      background-color: #35A5DB;
-      .header-logo {
-        margin: 10px auto;
-      }
-    }
-    .logo {
-      width: 65px;
-    }
-  }
-  .contact__number {
-    margin: 10px auto;
-  }
-}
-
-@include lm {
-  .advantage__descritpion {
-    padding: 10px 0;
-  }
-}
-
-@include xs {
-  .advantage__items {
-    width: 360px;
-  }
-  .price-container {
-    .price__item {
-      width: 360px;
-    }
-  }
-  .feedback-wrapper {
-    width: 90%;
-    margin: 0 auto;
-  }
-  a, a:visited, .contact__number {
-    font-size: 15px;
-  }
-  .burger-menu {
-    .nav-bar {
-      height: 305px;
-    }
-  }
-}
-
-/////////////////////
 .container-advantg {
   position: relative;
   margin-top: 50px;
@@ -416,4 +350,85 @@
 
 .container-advantg:hover .button {
   opacity: 1;
+}
+
+// ============================ MEDIA ========================
+
+@include lg {
+  .header-nav {
+    display: none;
+  }
+  .burger-menu {
+    display: flex;
+    .burger {
+      cursor: pointer;
+      margin-right: 27px;
+    }
+    .nav-bar {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      width: 250px;
+      height: 330px;
+      gap: 20px;
+      top: 15vh;
+      right: 0;
+      background-color: #35A5DB;
+      .header-logo {
+        margin: 10px auto;
+      }
+    }
+    .logo {
+      width: 65px;
+    }
+  }
+  .contact__number {
+    margin: 10px auto;
+  }
+}
+
+@include lm {
+  .advantage__descritpion {
+    padding: 10px 0;
+  }
+}
+
+@include xs {
+  .advantage__items {
+    width: 360px;
+  }
+  .price-container {
+    .price__item {
+      width: 360px;
+    }
+  }
+  .feedback-wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+  a, a:visited, .contact__number {
+    font-size: 15px;
+  }
+  .burger-menu {
+    .nav-bar {
+      height: 305px;
+    }
+  }
+  .container-advantg {
+    width: 349px;
+    img {
+      width: 351px;
+      height: 478px;
+    }
+    .line {
+      transform: translate(26px, 70px);
+    }
+  }
+  .title {
+    transform: translate(-71px, 70px);
+  }
+  .button {
+    transform: translate(26px, 70px);
+  }
 }
